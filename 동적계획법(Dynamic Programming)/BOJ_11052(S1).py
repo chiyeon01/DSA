@@ -16,5 +16,7 @@ for i in range(1, N):
             dp[i+1][j+1] = max(dp[i][j+1], dp[i][(j+1)%(i+1)] + cost*((j+1)//(i+1)))
         else:
             dp[i+1][j+1] = dp[i][j+1]
-            
+
+for i in range(N):
+    print(dp[i+1])
 print(dp[N][N])
