@@ -4,7 +4,6 @@
 using namespace std;
 
 void solution(int N, vector<long>& f, vector<long>& g) {
-    int cnt = 0;
     for (int i = 1; i < N + 1; i++) {
         for (int j = i; j < N + 1; j+=i) {
             f[j] += i;
